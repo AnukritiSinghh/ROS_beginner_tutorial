@@ -1,5 +1,3 @@
-## License
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 # ENPM808X - Week 9 Assignment : ROS2 Package for simple Publisher / Subscriber
