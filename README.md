@@ -41,6 +41,15 @@ source <path to ros2 setup>/install/setup.bash
 source install/setup.bash
 ros2 run cpp_pubsub listener
 ```
+## Service
+```
+ros2 run cpp_srvcli server
+```
+
+## Client
+```
+ros2 run cpp_srvcli client 2 3
+```
 
 ## To run Cpplint
 ```
