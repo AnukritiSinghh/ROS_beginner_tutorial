@@ -53,3 +53,11 @@ run_cpplint.sh
 cd ros2_ws/src/
 run_cppcheck.sh
 ```
+## Logging
+* Invoke rqt console GUI
+```
+rqt_console
+```
+```
+rqt_graph
+```
