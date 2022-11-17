@@ -1,0 +1,95 @@
+ros_tutorials/roscpp_tutorials/add_two_ints_server/add_two_ints_server.cpp:46:30: style: Variable 'service' is assigned a value that is never used. [unreadVariable]
+  ros::ServiceServer service = n.advertiseService("add_two_ints", add);
+                             ^
+ros_tutorials/roscpp_tutorials/add_two_ints_server_class/add_two_ints_server_class.cpp:56:25: style: Variable 'ss' is assigned a value that is never used. [unreadVariable]
+  ros::ServiceServer ss = n.advertiseService("add_two_ints", &AddTwo::add, &a);
+                        ^
+ros_tutorials/roscpp_tutorials/anonymous_listener/anonymous_listener.cpp:45:23: style: Variable 'sub' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub = n.subscribe("chatter", 1000, chatterCallback);
+                      ^
+ros_tutorials/roscpp_tutorials/custom_callback_processing/custom_callback_processing.cpp:84:23: style: Variable 'sub' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub = n.subscribe(ops);
+                      ^
+ros_tutorials/roscpp_tutorials/custom_callback_processing/custom_callback_processing.cpp:89:24: style: Variable 'sub2' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub2 = n.subscribe("chatter", 1000, chatterCallbackMainQueue);
+                       ^
+ros_tutorials/roscpp_tutorials/listener/listener.cpp:79:23: style: Variable 'sub' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub = n.subscribe("chatter", 1000, chatterCallback);
+                      ^
+ros_tutorials/roscpp_tutorials/listener_async_spin/listener_async_spin.cpp:72:24: style: Variable 'sub1' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub1 = n.subscribe("chatter", 10, &Listener::chatter1, &l);
+                       ^
+ros_tutorials/roscpp_tutorials/listener_async_spin/listener_async_spin.cpp:73:24: style: Variable 'sub2' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub2 = n.subscribe("chatter", 10, &Listener::chatter2, &l);
+                       ^
+ros_tutorials/roscpp_tutorials/listener_async_spin/listener_async_spin.cpp:74:24: style: Variable 'sub3' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub3 = n.subscribe("chatter", 10, &Listener::chatter3, &l);
+                       ^
+ros_tutorials/roscpp_tutorials/listener_async_spin/listener_async_spin.cpp:75:24: style: Variable 'sub4' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub4 = n.subscribe("chatter", 10, chatter4);
+                       ^
+ros_tutorials/roscpp_tutorials/listener_class/listener_class.cpp:55:23: style: Variable 'sub' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub = n.subscribe("chatter", 1000, &Listener::callback, &listener);
+                      ^
+ros_tutorials/roscpp_tutorials/listener_multiple/listener_multiple.cpp:56:24: style: Variable 'sub1' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub1 = n.subscribe("chatter", 10, &Listener::chatter1, &l);
+                       ^
+ros_tutorials/roscpp_tutorials/listener_multiple/listener_multiple.cpp:57:24: style: Variable 'sub2' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub2 = n.subscribe("chatter", 10, &Listener::chatter2, &l);
+                       ^
+ros_tutorials/roscpp_tutorials/listener_multiple/listener_multiple.cpp:58:24: style: Variable 'sub3' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub3 = n.subscribe("chatter", 10, &Listener::chatter3, &l);
+                       ^
+ros_tutorials/roscpp_tutorials/listener_multiple/listener_multiple.cpp:59:24: style: Variable 'sub4' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub4 = n.subscribe("chatter", 10, chatter4);
+                       ^
+ros_tutorials/roscpp_tutorials/listener_threaded_spin/listener_threaded_spin.cpp:72:24: style: Variable 'sub1' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub1 = n.subscribe("chatter", 10, &Listener::chatter1, &l);
+                       ^
+ros_tutorials/roscpp_tutorials/listener_threaded_spin/listener_threaded_spin.cpp:73:24: style: Variable 'sub2' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub2 = n.subscribe("chatter", 10, &Listener::chatter2, &l);
+                       ^
+ros_tutorials/roscpp_tutorials/listener_threaded_spin/listener_threaded_spin.cpp:74:24: style: Variable 'sub3' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub3 = n.subscribe("chatter", 10, &Listener::chatter3, &l);
+                       ^
+ros_tutorials/roscpp_tutorials/listener_threaded_spin/listener_threaded_spin.cpp:75:24: style: Variable 'sub4' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub4 = n.subscribe("chatter", 10, chatter4);
+                       ^
+ros_tutorials/roscpp_tutorials/listener_unreliable/listener_unreliable.cpp:81:23: style: Variable 'sub' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub = n.subscribe("chatter", 1000, chatterCallback, ros::TransportHints().unreliable());
+                      ^
+ros_tutorials/roscpp_tutorials/listener_with_tracked_object/listener_with_tracked_object.cpp:58:23: style: Variable 'sub' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub = n.subscribe("chatter", 1, &Object::chatterCallback, obj);
+                      ^
+ros_tutorials/roscpp_tutorials/listener_with_tracked_object/listener_with_tracked_object.cpp:59:24: style: Variable 'sub2' is assigned a value that is never used. [unreadVariable]
+  ros::Subscriber sub2 = n.subscribe("chatter", 1, chatterCallback);
+                       ^
+ros_tutorials/roscpp_tutorials/listener_with_userdata/listener_with_userdata.cpp:44:3: style: Class 'Listener' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+  Listener(const ros::NodeHandle& node_handle)
+  ^
+ros_tutorials/roscpp_tutorials/notify_connect/notify_connect.cpp:64:22: style: Variable 'pub' is assigned a value that is never used. [unreadVariable]
+  ros::Publisher pub = n.advertise<std_msgs::String>("chatter", 1000, chatterConnect, chatterDisconnect);
+                     ^
+ros_tutorials/roscpp_tutorials/parameters/parameters.cpp:86:9: style: Local variable 'i' shadows outer variable [shadowVariable]
+    int i = 0;
+        ^
+ros_tutorials/roscpp_tutorials/parameters/parameters.cpp:57:7: note: Shadowed declaration
+  int i;
+      ^
+ros_tutorials/roscpp_tutorials/parameters/parameters.cpp:86:9: note: Shadow variable
+    int i = 0;
+        ^
+ros_tutorials/roscpp_tutorials/timers/timers.cpp:55:21: style: Variable 'timer1' is assigned a value that is never used. [unreadVariable]
+  ros::Timer timer1 = n.createTimer(ros::Duration(0.1), callback1);
+                    ^
+ros_tutorials/roscpp_tutorials/timers/timers.cpp:56:21: style: Variable 'timer2' is assigned a value that is never used. [unreadVariable]
+  ros::Timer timer2 = n.createTimer(ros::Duration(1.0), callback2);
+                    ^
+ros_tutorials/turtlesim/tutorials/teleop_turtle_key.cpp:192:5: performance: Variable 'nh_' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    nh_ = rclcpp::Node::make_shared("teleop_turtle");
+    ^
+ros_tutorials/turtlesim/tutorials/teleop_turtle_key.cpp:42:5: performance: Variable 'hstdin_' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    hstdin_ = GetStdHandle(STD_INPUT_HANDLE);
+    ^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
