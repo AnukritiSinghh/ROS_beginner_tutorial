@@ -52,13 +52,11 @@ ros2 run cpp_srvcli client 2 3
 ```
 ## Launch 
 ```
-
-## To run Cpplint
-```
 cd launch
 ros2 launch my_launch.yaml
 ```
-
+## To run Cpplint
+```
 cd ros2_ws/src
 run_cpplint.sh
 ```
