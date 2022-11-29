@@ -41,7 +41,20 @@ source <path to ros2 setup>/install/setup.bash
 source install/setup.bash
 ros2 run cpp_pubsub listener
 ```
+## Service
+```
+ros2 run cpp_srvcli server
+```
 
+## Client
+```
+ros2 run cpp_srvcli client 2 3
+```
+## Launch 
+```
+cd launch
+ros2 launch my_launch.yaml
+```
 ## To run Cpplint
 ```
 cd ros2_ws/src
@@ -52,4 +65,12 @@ run_cpplint.sh
 ```
 cd ros2_ws/src/
 run_cppcheck.sh
+```
+## Logging
+* Invoke rqt console GUI
+```
+rqt_console
+```
+```
+rqt_graph
 ```
