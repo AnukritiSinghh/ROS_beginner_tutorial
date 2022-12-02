@@ -37,6 +37,29 @@ target_link_libraries(talker "${cpp_typesupport_target}")
 
 ament_export_dependencies(rosidl_default_runtime)
 
+if(BUILD_TESTING)
+  find_package(ament_cmake_gtest REQUIRED)
+  find_package(ament_lint_auto REQUIRED)
+
+ 
+  set(ament_cmake_cppcheck_FOUND TRUE)
+  set(ament_cmake_copyright_FOUND TRUE)
+  set(ament_cmake_cpplint_FOUND TRUE)
+  set(ament_cmake_flake8_FOUND TRUE)
+  set(ament_cmake_uncrustify_FOUND TRUE)
+  set(ament_cmake_xmllint_FOUND TRUE)
+  set(ament_cmake_lint_cmake_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+
+  ament_lint_auto_find_test_dependencies()
+
+  # gtest executable
+  set(TESTFILES
+    test/main.cpp
+    test/test_talker.cpp)
+  ament_add_gtest(test_${PROJECT_NAME} ${TESTFILES})
+  ament_target_dependencies(test_${PROJECT_NAME} rclcpp std_msgs)
+
 install(TARGETS
   talker
   listener
